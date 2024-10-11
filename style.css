@@ -37,14 +37,56 @@
                 height: 50px;
             }
             main {
-              
+              margin: 50px;
             }
             main h1 {
-               /* color: rgb(129, 141,179);
+               color: rgb(129, 141,179);
                 font-family: Arial, Helvetica, sans-serif;
-            }*/
+            }
+
+            table,caption, th,td {
+                border : solid 1px #000;
+               /* border: #000;*/
+            }
+            
+            table {
+                margin-top: 35px;
+            }
+
+            th,td{
+                width: 150px;
+                height: 35px;
+                text-align: center;
+            }
+
+            caption {
+                text-transform: uppercase;
+                font-weight: 600;
+                height: 40px;
+                padding-top: 15px;
+                color: #753a30;
+            }
+            label {
+                display: block;
+                margin :15px 0 0 0;
+            }
+
+            input[type="radio"] {
+                width: 25px; /* changed from 300 to 25 based on class demo*/
+            }
+
+            textarea {
+                width: 300px;
+            }
+
+            input[type="submit"] {
+                display: block;
+                margin: 20px 0 10px 0;
+                width: 100px;
+            }
+            
             footer{
-                height: 40x;
+                height: 40px;
                 background-color: rgb(129, 141,179);
                 text-align: center;
                 padding-top: 20px;
