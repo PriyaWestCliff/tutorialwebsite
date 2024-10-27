@@ -1,126 +1,95 @@
-            header{
-            background: url(images/central_park.jpg)0 -200px no-repeat; 
-            /*background-image: url(images/central_park.jpg);*/
-            background-size: 1500px;
-            /*background-size: 0 -200px;*/
-            /*background-size: no-repeat;*/
-            height: 300px;  
-            padding-top: 100px;
-            padding-left: 100px;
-            font-weight: bold;
-            font-family: Arial, Helvetica, sans-serif;
-            }
-            li {
-                list-style-type: none;
-                display: inline;
-                padding: 0 20px;
-            }
-            nav li a {/*contexual selector */
-                text-decoration: none;
-            }
-            nav li a:link {/*before click*/
-                color: #000;
-            }
-            nav li a:visited {/*after click*/
-                color: #818db3;
-            }
-            nav li a:hover{/*hover above click*/
-                color:#333;
-            }
-            nav li a:active{/*press down*/
-                color:#753a30;
-            }
-            nav {
-                background-color: rgb(255, 245, 238);
-                text-align: center;
-                padding-top: 2px;
-                height: 50px;
-            }
-            main {
-              margin: 50px;
-            }
-            main h1 {
-               color: rgb(129, 141,179);
-                font-family: Arial, Helvetica, sans-serif;
-            }
 
-            table,caption, th,td {
-                border : solid 1px #000;
-               /* border: #000;*/
-            }
-            
-            table {
-                margin-top: 35px;
-            }
+    header{
+        background: url(images/central_park.jpg)0 -200px no-repeat; 
+        /*background-image: url(images/central_park.jpg);*/
+        background-size: 1500px;
+        /*background-size: 0 -200px;*/
+        /*background-size: no-repeat;*/
+        height: 300px;  
+        padding-top: 100px;
+        padding-left: 100px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        }
+    li{
+        list-style-type: none;
+        display: inline;
+        padding: 0 20px;
+    }
+    /*nav li a{ contextual selector*/
+    li a {
+        text-decoration: none; 
+    }
+    li a:link {/*before click*/
+        color:#000; 
+    }
+    li a:visited{/*after click*/
+        color:#818db3; 
+    }
+    li a:hover{
+        color:#333; /*hover above click*/
+    }
+    li a:active{/*press down*/
+        color:#753a30; 
+    }
+    nav {
+        background-color: rgb(255, 245, 238);
+        height: 50px;
+        text-align: center;
+        padding-top: 2px;
+    }
+    main {
+        margin: 50px;
+    }
+    main h1{
+        color:rgb(129, 141, 179);
+        font-family: arial ;
+    }
+    table{
+        margin-top: 35px;
+    }
+    table, caption, th, td{
+        border: 1px solid #000;
+    }
+    th, td{
+        width: 150px;
+        height: 35px;
+        text-align: center;
+    }
+    caption{
+        text-transform: uppercase;
+        font-weight: 600;
+        height: 40px;
+        padding-top: 15px;
+        color: #753a30
+    }
+    label{
+    display: block;
+    margin: 15px 0 0 0;
+    }
+    input{
+        width: 300px;
+    }
+    input[type="radio"]{
+        width: 25px;
+    }
+    textarea{
+        width:300px;
+    }
+    input[type="submit"] {
+        display: block;
+        margin: 20px 0 10px 0;
+        width: 100px;
+    }
 
-            th,td{
-                width: 150px;
-                height: 35px;
-                text-align: center;
-            }
+    main #album #photo img {
+        width: 400px;
 
-            caption {
-                text-transform: uppercase;
-                font-weight: 600;
-                height: 40px;
-                padding-top: 15px;
-                color: #753a30;
-            }
-            label {
-                display: block;
-                margin :15px 0 0 0;
-            }
-
-            input[type="radio"] {
-                width: 25px; /* changed from 300 to 25 based on class demo*/
-            }
-
-            textarea {
-                width: 300px;
-            }
-
-            input[type="submit"] {
-                display: block;
-                margin: 20px 0 10px 0;
-                width: 100px;
-            }
-            
-            footer{
-                height: 40px;
-                background-color: rgb(129, 141,179);
-                text-align: center;
-                padding-top: 20px;
-                color: rgb(211, 218, 240);
-                font-family: Arial, Helvetica, sans-serif;
-                font-size: 14px; /*16px=1em =1rem=100%=12pt||14px=0.9rem=90%=11pt*/
-            }
-        </style>
-    </head>
-    <body>
-        <!-- Container to wrap everything -->
-        <div id="container">
-
-            <!-- Brand of website -->
-            <header style="font-size:60px; color: #fff"> My Web Site Brand</header>
-
-            <!-- Main navigation -->
-            <nav>
-                <ul>
-                    <li><a href=index.html>Home</a></li>
-                    <li><a href=page2.html>About</a></li>
-                    <li>Gallery</li>
-                    <li><a href=page3.html>Contact</a></li>
-                </ul>
-            </nav>
-
-            <!-- Main content area -->
-            <main>
-                <h1>My First Heading</h1>
-                <p>My <a href="#">First</a> Paragraph</p>
-                <!--<img src="images/central_park.jpg" alt="Central Park Image" width="500">-->
-            </main>
-
-            <!-- Footer information -->
-            <footer>&copy; Copyright 2022  My Website Name</footer>
-
-        </div>
+    }
+    footer{
+        height: 40px;
+        background-color: rgb(129, 141, 179);
+        text-align: center;
+        padding-top:20px;
+        color:rgb(211, 218, 240)
+    }
